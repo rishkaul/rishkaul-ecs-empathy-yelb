@@ -4,4 +4,9 @@ import * as cdk from '@aws-cdk/core';
 import { EcsEmpathyYelbStack } from '../lib/ecs_empathy_yelb-stack';
 
 const app = new cdk.App();
-new EcsEmpathyYelbStack(app, 'EcsEmpathyYelbStack');
+new EcsEmpathyYelbStack(app, 'EcsEmpathyYelbStack', {
+    env: {
+        account: '225225649990',
+        region: 'us-west-2'
+    }
+});
