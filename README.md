@@ -1,14 +1,15 @@
-# Welcome to your CDK TypeScript project!
+# ECS Empathy Workshop
 
-This is a blank project for TypeScript development with CDK.
-
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+1. Create a public load balanced UI service using ECS Fargate
+2. Create an internal AppServer using ECS Fargate
+3. Make AppServer discoverable to UI by name
+4. Allow connections from UI service to AppServer
+5. Persistence layer is created separately using Cfn templates (out of scope) - has to be in the same VPC
 
 ## Useful commands
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
+ * `npm install`     install dependencies
  * `cdk deploy`      deploy this stack to your default AWS account/region
  * `cdk diff`        compare deployed stack with current state
  * `cdk synth`       emits the synthesized CloudFormation template
+ * `cdk destroy`     destroy the resources
