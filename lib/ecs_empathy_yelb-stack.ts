@@ -85,7 +85,7 @@ export class EcsEmpathyYelbStack extends cdk.Stack {
                 name: "yelb-appserver", /* Needs to be this exact string, expected by UI service */
                 cloudMapNamespace: yelbCloudMapNamespace,
                 /*
-                 This ttl help much as there are multiple levels of caching,
+                 This ttl does not help much as there are multiple levels of caching,
                  need to forcefully update UI service after every AppServer update
                 */
                 dnsTtl: cdk.Duration.seconds(10)
