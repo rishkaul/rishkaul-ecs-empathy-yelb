@@ -61,6 +61,7 @@ export class EcsEmpathyYelbStack extends cdk.Stack {
                 /*
                  Setup separately using this template, need to be in the same VPC as the ECS cluster
                  https://wildrydes-mreferre.s3-eu-west-1.amazonaws.com/Yelb-cloudformation-EC2-Postgres-redis.yaml
+                 Check cfn/ folder if link broken
                 */
                 'REDIS_SERVER_ENDPOINT': 'ip-10-0-115-244.us-west-2.compute.internal',
                 'YELB_DB_SERVER_ENDPOINT': 'ip-10-0-97-220.us-west-2.compute.internal',
