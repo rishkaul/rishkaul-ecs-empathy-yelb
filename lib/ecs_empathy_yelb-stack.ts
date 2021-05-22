@@ -63,8 +63,8 @@ export class EcsEmpathyYelbStack extends cdk.Stack {
                  https://wildrydes-mreferre.s3-eu-west-1.amazonaws.com/Yelb-cloudformation-EC2-Postgres-redis.yaml
                  Check cfn/ folder if link broken
                 */
-                'REDIS_SERVER_ENDPOINT': 'ip-10-0-115-244.us-west-2.compute.internal',
-                'YELB_DB_SERVER_ENDPOINT': 'ip-10-0-97-220.us-west-2.compute.internal',
+                'REDIS_SERVER_ENDPOINT': 'ip-10-0-175-50.us-west-2.compute.internal',
+                'YELB_DB_SERVER_ENDPOINT': 'ip-10-0-168-5.us-west-2.compute.internal',
                 'SEARCH_DOMAIN': yelbCloudMapNamespace.namespaceName /* Not really required, but AppServer does consume this (safely) */
             },
             logging: LogDriver.awsLogs({
